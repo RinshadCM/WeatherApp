@@ -31,7 +31,7 @@ function displaydata(details) {
     temperature = Math.floor(details.main.temp - 273)
 
     htmldata = ` 
-    <div id="bodyw" class="movetop">
+    <div id="bodyw" class="test1 movetop">
     <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="row card0">
