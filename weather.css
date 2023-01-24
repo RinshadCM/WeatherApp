@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Montserrat:wght@500&family=Nunito:ital,wght@1,400;1,700&display=swap');
+
+
 #bodyw {
     color: #fff;
     overflow-x: hidden;
     height: 100%;
-    background-image: linear-gradient(#81D4FA, #2196F3);
+    /* background-image: linear-gradient(#81D4FA, #2196F3); */
+    background-image: url(./img/bg3.jpg);
     background-repeat: no-repeat;
 
 
@@ -10,6 +14,7 @@
 
 body{
     position: absolute;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -19,13 +24,16 @@ body{
 }
 
 .card1 {
-    background-image: linear-gradient(#2196F3, #81D4FA);
+    /* background-image: linear-gradient(#2196F3, #81D4FA); */
+    background-image: url(./img/bggg.jpg);
+    background-size: cover;
     padding: 30px 20px 30px 50px;
 }
 
 .image {
     width: 60%;
     height: 100%;
+    border-radius: 3rem;
 }
 
 .large-font {
@@ -72,6 +80,8 @@ body{
 } */
 
 html { overflow-y: hidden; }
+
+
 
 
 

@@ -22,10 +22,10 @@ function displaydata(details) {
     sunset = details.sys.sunset
 
     dater = new Date(sunrise * 1000)
-    sr = dater.toLocaleTimeString()
+    sr = dater.toLocaleTimeString().slice(0, -6)
 
     dates = new Date(sunset * 1000)
-    ss = dates.toLocaleTimeString()
+    ss = dates.toLocaleTimeString().slice(0, -6)
 
 
     temperature = Math.floor(details.main.temp - 273)
@@ -38,7 +38,7 @@ function displaydata(details) {
             <div class="card1 col-lg-8 col-md-7">
                 <h2>Weather App</h2>
                 <div class="text-center">
-                    <img class="image mt-5" src="./img/image-balloon.jpg">
+                    <img class="image mt-5" src="./img/balloonn.jpg">
                 </div>
                 <div class="row px-3 mt-3 mb-3">
                     <h1 id="temp1" class="large-font mr-3">${temperature}&#176;</h1>
@@ -66,11 +66,11 @@ function displaydata(details) {
                     </div>
                     <div class="row px-3">
                         <p class="light-text">Sunrise</p>
-                        <p id="srise" class="ml-auto">${sr}</p>
+                        <p id="srise" class="ml-auto">${sr} am, IST</p>
                     </div>
                     <div class="row px-3">
                         <p class="light-text">Sunset</p>
-                        <p id="sset" class="ml-auto">${ss}</p>
+                        <p id="sset" class="ml-auto">${ss} pm, IST</p>
                     </div>
                     <div class="row px-3">
                         <p class="light-text">Type</p>
